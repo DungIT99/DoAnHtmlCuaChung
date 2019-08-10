@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">  
+    <head>
+    <title>Cloud Zoom: Official Website of the jQuery Image Zoom Plugin</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/cloudzoom.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container" style="padding:20px 15px">
+    <div class="col-sm-6">
+    <div class="text-center"> 
+        <img style="width:80%;min-width: 300px;" class="cloudzoom" alt ="Cloud Zoom small image" id ="zoom1" src="images/large/image1.jpg"
+             title="Cloud Zoom has many configuration options to match the look and feel of your website"
+             data-cloudzoom='
+             zoomImage:"images/large/image1.jpg",
+             zoomSizeMode: "image",
+             tintColor:"#000",
+             tintOpacity:0.25,
+             captionPosition:"bottom",
+             maxMagnification:4,
+             autoInside:750,
+        '>
+         <!-- zoomPosition: "inside" -->
+    </div>
+    <div class="gen-spacer" style="margin-top:15px; "></div>
+    <div class="text-center">
+        <a href="images/large/image1.jpg" class="thumb-link">    
+            <img class="cloudzoom-gallery" width="64" 
+                 src="images/small/image1.jpg"
+                 title="Cloud Zoom has many configuration options to match the look and feel of your website"
+                 alt ="Cloud Zoom thumb image"
+                 data-cloudzoom='
+                 useZoom:"#zoom1",
+                 image:"images/small/image1.jpg",
+                 zoomImage:"images/large/image1.jpg"
+            '>
+        </a>
+
+        <a href="images/large/image2.jpg" class="thumb-link">
+            <img class="cloudzoom-gallery" width="64" 
+                 src="images/small/image2.jpg"
+                 alt ="Cloud Zoom thumb image"
+                 title="Works great with iPad and other touch-enabled devices"
+                 data-cloudzoom='
+                 useZoom:"#zoom1",
+                 image:"images/small/image2.jpg",
+                 zoomImage:"images/large/image2.jpg"
+            '>
+        </a>
+
+        <a href="images/large/image3.jpg" class="thumb-link">
+            <img class="cloudzoom-gallery"  width="64" 
+                src="images/small/image3.jpg"
+                 alt ="Cloud Zoom thumb image"
+                 title="Regular free updates and new features with technical support"
+                 data-cloudzoom='
+                 useZoom:"#zoom1",
+                 image:"images/small/image3.jpg"
+            '>
+        </a>
+     </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- Include KillerCarousel JavaScript -->
+<script type="text/javascript" src="js/cloudzoom.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$('#zoom1').bind('click',function(){
+    var cloudZoom = $(this).data('CloudZoom'); 
+        cloudZoom.closeZoom();
+        $.fancybox.open(cloudZoom.getGalleryList());
+        return false;
+    });
+});
+    
+CloudZoom.quickStart(); // cz
+JetZoom.quickStart();
+StarZoom.quickStart();
+     
+</script>
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+header.header{
+	border-bottom: 1px gray solid;
+}
+header .container{
+	padding: 15px 0 0;
+}
+header .container .div{
+	margin-left: 40%;
+	padding: 15px 0;
+	line-height: 20px
+}header .container .div span.colorr{
+	font-size: 13px;
+	color: red;
+}
+form.navbar-form.navbar-left {
+    margin-left: 28%;
+}
+ul.navbar-nav li:hover{
+background: lightgoldenrodyellow
+}
+
+nav.container{
+	/* background: gray; */
+	border: none;
+}
+aside{
+	padding: 15px 0;
+}
+aside h3{
+	border-bottom: dotted 1px black
+}
+.new_hots{
+	padding: 0 15px
+}
+.item img{
+	width: 100%;
+	position: relative;
+}
+.trai{
+	margin-top: 70px;
+}
+
+.container .row img{
+	padding: 20px 0
+}
+div.banner-giua{
+	position: relative;
+}
+div .divcontent .ad_banner_2{
+	color: yellow;
+}
+div .divcontent{
+	position: absolute;
+	top: 50px;
+	color: white;
+
+}
+footer.bg-danger{
+	background: #212121;
+	color: white
+}
+footer.footer .container h5{
+	font-weight: bold;
+	padding: 15px 0;
+}
+footer.footer .container p{
+	color: #9e9e9e;
+}
+footer.footer .container{
+	padding: 15px 0 30px 0
+}
+.caption a p{
+	height: 50px;
+}
+span.sale {
+    display: inline-block;
+}
+
+.banner_bottom {
+	overflow: hidden;
+}
+.banner_bottom img{
+
+	width: 100%;
+	transform: scale(1);
+	transition: .5s all;
+}
+.banner_bottom:hover img{
+	transform: scale(1.1);
+}
+
+.form-lien-he form{
+	margin-top: 50px;
+	margin-bottom: 50px
+}
+ ul.menu_c1{
+	/* width: 100%; */
+	/* background: lightgreen; */
+	margin: 0;
+	padding: 0;
+}
+ul.menu_c1>li{
+	display: inline-block;
+	position: relative;
+}
+ul.menu_c1>li>a{
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+ul.menu_c2>li>a:hover{
+
+	color: lightpink
+}
+
+/* cap 2 */
+
+ul.menu_c1>li ul{
+	position: absolute;
+	width: 200px;
+	display: none;
+	z-index: 2
+}
+ul.menu_c1>li:hover ul{
+	display: block;
+	padding: 0px 0;
+	background: #e7e7e7
+}
+ul.menu_c1>li ul.menu_c2>li{
+	display: block;
+	padding: 10px 0
+	/* position: relative;*/   /* của cấp n */ 
+}
+ul.menu_c1>li ul.menu_c2>li>a{
+	display: block;
+	text-decoration: none
+}
+.form_dk{
+	width: 500px
+}
+/* footer máy bay */
+form.form_footer .form-group .form-control{
+	width: 87%
+}
+.media-body h4.media-heading{
+	font-size: 15px;
+}
+.media .media-body a.media-heading{
+	text-decoration: none
+}
+.blog_media{
+	padding: 15px;
+	line-height: 25px
+}
+.blog_media a{
+	padding: 8px 20px;
+	background: none;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black
+}
+.blog_1{
+	padding: 0 50px
+}
+.blog_1 ol li{
+	font-weight: bold;
+	padding: 15px 0
+}
+.blog_1 img{
+	padding: 10px 0
+}
+.footer_lk p a{
+	text-decoration: none;
+	color: #9e9e9e;
+}
+/* thoi_trang_nữ */
+.col-xs-6.col-sm-4.col-md-3.col-lg-3.test {
+    height: 400px;
+}
+.col-xs-6.col-sm-4.col-md-3.col-lg-3.test_1 {
+    height: 430px;
+}
+.ct_sp{
+	padding: 20px 0;
+}
+.form_dat_hang{
+	padding: 20px 30px
+}
+.error{
+	color: red;	
+}
+.fab{
+	padding: 15px
+}
